@@ -1,10 +1,12 @@
-import kue from 'kue';
+import kue from "kue";
 
 const queue = kue.createQueue();
-const queueName = 'push_notification_code';
+const queueName = "push_notification_code";
 
 function sendNotification(phoneNumber, message, done) {
-  console.log(`Sending notification to ${phoneNumber}, with message: ${message}`);
+  console.log(
+    `Sending notification to ${phoneNumber}, with message: ${message}`
+  );
   done();
 }
 
